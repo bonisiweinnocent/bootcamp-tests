@@ -1,10 +1,10 @@
 describe('fromWhere' , function(){
-    it('should return Bellville if the reg number starts with CY.' , function(){
-        assert.equal('Bellville',fromWhere("CY"));
+    it('should return Bellville if the registration number starts with CY.' , function(){
+        assert.equal('Bellville',fromWhere('CY'));
 
     });
     it('should return Paarl if the reg number starts with CJ.' , function(){
-        assert.equal('Paarl',fromWhere("CJ"));
+        assert.deepEqual('Paarl',fromWhere("CJ"));
 
 });
 it('should return Cape Town if the reg number starts with CA.' , function(){
